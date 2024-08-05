@@ -1,0 +1,843 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='FAA_Wildlife_Strikes' inline='true' name='federated.08nrcla1787zwa1bxd90y0ovv2qh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FAA_Wildlife_Strikes' name='textscan.01dbblk1tad61j1au9sfg1m42us3'>
+            <connection class='textscan' directory='C:/Users/Shiv/Documents/Training arc/DATA ANALYSIS/TABLEAU TRAINING/1/DATASETS/faa_Wildlife_strike' filename='FAA_Wildlife_Strikes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.01dbblk1tad61j1au9sfg1m42us3' name='FAA_Wildlife_Strikes.csv' table='[FAA_Wildlife_Strikes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Airport: Code' ordinal='0' />
+            <column datatype='string' name='Airport: Name' ordinal='1' />
+            <column datatype='string' name='Origin State' ordinal='2' />
+            <column datatype='string' name='Origin State Code' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='Aircraft: Type' ordinal='5' />
+            <column datatype='integer' name='Aircraft: Number of engines' ordinal='6' />
+            <column datatype='datetime' name='Collision Date and Time' ordinal='7' />
+            <column datatype='string' name='When: Time of day' ordinal='8' />
+            <column datatype='string' name='When: Phase of flight' ordinal='9' />
+            <column datatype='string' name='Effect: Amount of damage (detailed)' ordinal='10' />
+            <column datatype='string' name='Effect: Impact to flight' ordinal='11' />
+            <column datatype='string' name='Effect: Indicated Damage' ordinal='12' />
+            <column datatype='integer' name='Cost: Total $' ordinal='13' />
+            <column datatype='integer' name='Days' ordinal='14' />
+            <column datatype='integer' name='Feet above ground' ordinal='15' />
+            <column datatype='integer' name='Miles from airport' ordinal='16' />
+            <column datatype='string' name='Wildlife: Animal Category' ordinal='17' />
+            <column datatype='string' name='Wildlife: Species Order' ordinal='18' />
+            <column datatype='string' name='Wildlife: Species Group' ordinal='19' />
+            <column datatype='string' name='Wildlife: Species' ordinal='20' />
+            <column datatype='string' name='Wildlife: Species ID' ordinal='21' />
+            <column datatype='integer' name='Number of Strikes' ordinal='22' />
+            <column datatype='integer' name='Record ID' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.01dbblk1tad61j1au9sfg1m42us3' name='FAA_Wildlife_Strikes.csv' table='[FAA_Wildlife_Strikes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Airport: Code' ordinal='0' />
+            <column datatype='string' name='Airport: Name' ordinal='1' />
+            <column datatype='string' name='Origin State' ordinal='2' />
+            <column datatype='string' name='Origin State Code' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='Aircraft: Type' ordinal='5' />
+            <column datatype='integer' name='Aircraft: Number of engines' ordinal='6' />
+            <column datatype='datetime' name='Collision Date and Time' ordinal='7' />
+            <column datatype='string' name='When: Time of day' ordinal='8' />
+            <column datatype='string' name='When: Phase of flight' ordinal='9' />
+            <column datatype='string' name='Effect: Amount of damage (detailed)' ordinal='10' />
+            <column datatype='string' name='Effect: Impact to flight' ordinal='11' />
+            <column datatype='string' name='Effect: Indicated Damage' ordinal='12' />
+            <column datatype='integer' name='Cost: Total $' ordinal='13' />
+            <column datatype='integer' name='Days' ordinal='14' />
+            <column datatype='integer' name='Feet above ground' ordinal='15' />
+            <column datatype='integer' name='Miles from airport' ordinal='16' />
+            <column datatype='string' name='Wildlife: Animal Category' ordinal='17' />
+            <column datatype='string' name='Wildlife: Species Order' ordinal='18' />
+            <column datatype='string' name='Wildlife: Species Group' ordinal='19' />
+            <column datatype='string' name='Wildlife: Species' ordinal='20' />
+            <column datatype='string' name='Wildlife: Species ID' ordinal='21' />
+            <column datatype='integer' name='Number of Strikes' ordinal='22' />
+            <column datatype='integer' name='Record ID' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport: Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airport: Code]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Airport: Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airport: Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airport: Name]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Airport: Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origin State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Origin State]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Origin State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Origin State Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Origin State Code]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Origin State Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft: Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aircraft: Type]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Aircraft: Type</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aircraft: Number of engines</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aircraft: Number of engines]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Aircraft: Number of engines</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Collision Date and Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Collision Date and Time]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Collision Date and Time</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>When: Time of day</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[When: Time of day]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>When: Time of day</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>When: Phase of flight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[When: Phase of flight]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>When: Phase of flight</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect: Amount of damage (detailed)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Effect: Amount of damage (detailed)]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Effect: Amount of damage (detailed)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect: Impact to flight</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Effect: Impact to flight]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Effect: Impact to flight</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Effect: Indicated Damage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Effect: Indicated Damage]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Effect: Indicated Damage</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost: Total $</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost: Total $]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Cost: Total $</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Days]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Days</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Feet above ground</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Feet above ground]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Feet above ground</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miles from airport</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Miles from airport]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Miles from airport</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Animal Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wildlife: Animal Category]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Wildlife: Animal Category</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species Order</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wildlife: Species Order]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Wildlife: Species Order</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wildlife: Species Group]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Wildlife: Species Group</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wildlife: Species]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Wildlife: Species</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wildlife: Species ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Wildlife: Species ID]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Wildlife: Species ID</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Strikes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Strikes]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Number of Strikes</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Record ID]</local-name>
+            <parent-name>[FAA_Wildlife_Strikes.csv]</parent-name>
+            <remote-alias>Record ID</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Origin State Code]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[Origin State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Record ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='FAA_Wildlife_Strikes.csv' datatype='table' name='[__tableau_internal_object_id__].[FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='FAA_Wildlife_Strikes.csv' id='FAA_Wildlife_Strikes.csv_0F6A5404CDF341C3862338D64D96634D'>
+            <properties context=''>
+              <relation connection='textscan.01dbblk1tad61j1au9sfg1m42us3' name='FAA_Wildlife_Strikes.csv' table='[FAA_Wildlife_Strikes#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Airport: Code' ordinal='0' />
+                  <column datatype='string' name='Airport: Name' ordinal='1' />
+                  <column datatype='string' name='Origin State' ordinal='2' />
+                  <column datatype='string' name='Origin State Code' ordinal='3' />
+                  <column datatype='string' name='Country' ordinal='4' />
+                  <column datatype='string' name='Aircraft: Type' ordinal='5' />
+                  <column datatype='integer' name='Aircraft: Number of engines' ordinal='6' />
+                  <column datatype='datetime' name='Collision Date and Time' ordinal='7' />
+                  <column datatype='string' name='When: Time of day' ordinal='8' />
+                  <column datatype='string' name='When: Phase of flight' ordinal='9' />
+                  <column datatype='string' name='Effect: Amount of damage (detailed)' ordinal='10' />
+                  <column datatype='string' name='Effect: Impact to flight' ordinal='11' />
+                  <column datatype='string' name='Effect: Indicated Damage' ordinal='12' />
+                  <column datatype='integer' name='Cost: Total $' ordinal='13' />
+                  <column datatype='integer' name='Days' ordinal='14' />
+                  <column datatype='integer' name='Feet above ground' ordinal='15' />
+                  <column datatype='integer' name='Miles from airport' ordinal='16' />
+                  <column datatype='string' name='Wildlife: Animal Category' ordinal='17' />
+                  <column datatype='string' name='Wildlife: Species Order' ordinal='18' />
+                  <column datatype='string' name='Wildlife: Species Group' ordinal='19' />
+                  <column datatype='string' name='Wildlife: Species' ordinal='20' />
+                  <column datatype='string' name='Wildlife: Species ID' ordinal='21' />
+                  <column datatype='integer' name='Number of Strikes' ordinal='22' />
+                  <column datatype='integer' name='Record ID' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FAA_Wildlife_Strikes' name='federated.08nrcla1787zwa1bxd90y0ovv2qh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08nrcla1787zwa1bxd90y0ovv2qh'>
+            <column datatype='integer' name='[Cost: Total $]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Strikes]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Wildlife: Animal Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Wildlife: Species]' role='dimension' type='nominal' />
+            <column-instance column='[Wildlife: Animal Category]' derivation='None' name='[none:Wildlife: Animal Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Wildlife: Species]' derivation='None' name='[none:Wildlife: Species:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cost: Total $]' derivation='Sum' name='[sum:Cost: Total $:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Strikes]' derivation='Sum' name='[sum:Number of Strikes:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Animal Category:nk]'>
+            <groupfilter function='member' level='[none:Wildlife: Animal Category:nk]' member='&quot;Birds&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Species:nk]' direction='DESC' using='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Number of Strikes:qk]' />
+          <slices>
+            <column>[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Animal Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Number of Strikes:qk]' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Number of Strikes:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Cost: Total $:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#5555ff</color>
+                <color>#6e6ef8</color>
+                <color>#8686f2</color>
+                <color>#9d9dec</color>
+                <color>#b2b2e5</color>
+                <color>#c6c6df</color>
+                <color>#d9d9d9</color>
+                <color>#d1aeae</color>
+                <color>#c98686</color>
+                <color>#c16060</color>
+                <color>#b93d3d</color>
+                <color>#b11d1d</color>
+                <color>#aa0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Cost: Total $:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8460773229598999' />
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Species:nk]</rows>
+        <cols>[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Number of Strikes:qk]</cols>
+      </table>
+      <simple-id uuid='{CD9D7BF8-ED19-41B7-8217-E97039E82F1B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Animal Category:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.08nrcla1787zwa1bxd90y0ovv2qh].[sum:Cost: Total $:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Animal Category:nk]</field>
+            <field>[federated.08nrcla1787zwa1bxd90y0ovv2qh].[none:Wildlife: Species:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{249CF7D4-41D1-41AD-99D7-2CD5949AB69F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
